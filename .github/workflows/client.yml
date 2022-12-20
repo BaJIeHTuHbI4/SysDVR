@@ -28,7 +28,7 @@ jobs:
       with:
         repository: "GyanD/codexffmpeg"
         latest: true
-        fileName: "/ffmpeg-5.1.2-full_build-shared.zip"
+        fileName: "ffmpeg-5.1.2-full_build-shared.zip"
     # Download releases from my libwdi fork for CI builds of Wdi-simple.exe, it's needd to install the USB driver
     - uses: robinraju/release-downloader@v1.3
       with:
