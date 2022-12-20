@@ -4,13 +4,13 @@ set PATH=C:\Program Files\7zip;C:\Program Files\7-Zip\;C:\Program Files\Microsof
 
 REM Extract binaries if this is a CI build
 
-if exist ffmpeg-master-latest-win64-lgpl-shared.zip (
-	echo extracting ffmpeg-master-latest-win64-lgpl-shared.zip
-	7z x ffmpeg-master-latest-win64-lgpl-shared.zip -offmpeg || goto error
+if exist ffmpeg-5.1.2-full_build-shared.zip (
+	echo extracting ffmpeg-5.1.2-full_build-shared.zip
+	7z x ffmpeg-5.1.2-full_build-shared.zip -offmpeg || goto error
 	
 	mkdir Client\runtimes\win-x64\native
 	
-	copy ffmpeg\ffmpeg-master-latest-win64-lgpl-shared\bin\*.dll Client\runtimes\win-x64\native
+	copy ffmpeg\ffmpeg-5.1.2-full_build-shared\bin\*.dll Client\runtimes\win-x64\native
 )
 
 if exist wdi-simple.zip (
