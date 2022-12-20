@@ -24,13 +24,13 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     # Download ffmpeg for windows builds
-    - uses: robinraju/release-downloader@v1.3
+    - uses: robinraju/release-downloader@v1.7
       with:
-        repository: "BtbN/FFmpeg-Builds"
+        repository: "GyanD/codexffmpeg"
         latest: true
-        fileName: "ffmpeg-master-latest-win64-lgpl-shared.zip"
+        fileName: "ffmpeg-5.1.2-full_build-shared.zip"
     # Download releases from my libwdi fork for CI builds of Wdi-simple.exe, it's needd to install the USB driver
-    - uses: robinraju/release-downloader@v1.3
+    - uses: robinraju/release-downloader@v1.7
       with:
         repository: "exelix11/libwdi"
         latest: true

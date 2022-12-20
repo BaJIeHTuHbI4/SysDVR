@@ -7,8 +7,8 @@
 
 		public const int VideoPayloadSize = 0x50000;
 
-		public const int VideoWidth = 1280;
-		public const int VideoHeight = 720;
+		public const int VideoWidth = 1920;
+		public const int VideoHeight = 1080;
 
 		public const int AudioPayloadSize = 0x1000;
 		public const int AudioBatching = 2;
